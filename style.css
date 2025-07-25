@@ -4,31 +4,58 @@ body {
   color: #000;
 }
 
-ul {
-  list-style: disc;
-  padding-left: 1.2rem;
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
 }
 
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
 }
 
-img {
-  border-radius: 6px;
-}
-
-a {
-  color: #000;
-  text-decoration: underline;
-}
-
-a:hover {
-  text-decoration: none;
+h1, h2, h3, h4, h6 {
+  margin-bottom: 1rem;
 }
 
 .btn-dark {
-  padding: 10px 20px;
-  font-weight: 500;
   border-radius: 6px;
+  font-weight: 500;
 }
+
+input, textarea {
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.card-body a {
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.social-icons a {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+}
+
+
+
+

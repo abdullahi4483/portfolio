@@ -1,0 +1,72 @@
+/* Default custom styles (optional) */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode example */
+body.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.dark-mode .btn-dark {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Make theme toggle + language selector smaller on mobile */
+@media (max-width: 576px) {
+  #themeToggle {
+    padding: 4px 10px !important;
+    font-size: 0.75rem !important;
+    line-height: 1.2 !important;
+  }
+
+  #langSelect {
+    font-size: 0.75rem !important;
+    padding: 4px 8px !important;
+  }
+
+  .theme-lang-container {
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    gap: 0.4rem !important;
+  }
+}
+/* Make "View My Work" button mobile responsive */
+@media (max-width: 576px) {
+  header .btn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 1rem auto 0 auto;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Social media icon spacing and size */
+.social-icons a {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0d6efd; /* Bootstrap primary color */
+}
+
+/* Make icons stack or center nicely on mobile */
+@media (max-width: 576px) {
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .social-icons a i {
+    font-size: 1.25rem; /* slightly larger touch-friendly size */
+  }
+}
